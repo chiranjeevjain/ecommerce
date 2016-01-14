@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	template="/templates/layout.xhtml">
+	<ui:define name="content">
+		<h:outputStylesheet library="css" name="smart.css" />
+		<h:outputScript library="jqplot-plugins"
+			name="jqplot.pointLabels.min.js" target="head" />
+		<h:outputScript library="jqplot-plugins"
+			name="jqplot.barRenderer.min.js" target="head" />
+		<h:outputScript library="jqplot-plugins"
+			name="jqplot.categoryAxisRenderer.min.js" target="head" />
+		<style>
+.panelColor {
+	background-color: #D8D8D8;
+}
+
+.container {
+	background-image: url("./resources/imgs_smart/kmk1.png");
+	height:40vh;
+	background-repeat: no-repeat;
+	background-position: right center, left top;
+	margin-right: 0px, 0px;
+		
+}
+
+.colclass1 {
+	width: 20%;
+	text-align: right;
+	padding-right: 5px;
+	height: 30px;
+}
+
+.colclass2 {
+	width: 13%;
+	margin: 20px !important;
+}
+
+.colclass4 {
+	text-align: left;
+}
+
+.colclass5 {
+	text-align: left;
+	vertical-align: top;
+}
+
+.labelClass {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.border_filedset {
+	border: none;
+}
+
+.row1 {
+	background-color: #dcecf9
+}
+
+.col1 {
+	text-align: left;
+}
+
+.col2 {
+	text-align: right;
+}
+
+.row2 {
+	background-color: #fff
+}
+
+.indiv {
+	float: left;
+	margin-top: 20px;
+}
+.panelGridCenter {
+    margin: 0 auto;
+}
+</style>
+		<h:head>
+			<p:ajaxStatus onstart="statusDialog.show();"
+				onsuccess="statusDialog.hide();" />
+
+			<p:dialog modal="true" widgetVar="statusDialog" showHeader="false"
+				draggable="false" closable="false" resizable="false" visible="false"
+				position="center" maximizable="false" minimizable="false">
+				<p:graphicImage value="#{resource['images/ajax-loader.gif']}" />
+			</p:dialog>
+		</h:head>
+
+		<body>
+			<h:form id="dashBoardForm">
+				<ui:include src="/templates/header.xhtml" />
+				<p:messages id="messages" showDetail="true" autoUpdate="true"
+					closable="true" />
+
+				<h:panelGrid columns="3" width="50%" styleClass="panelGridCenter"
+					columnClasses="colclass1,colclass2">
+					<p:outputLabel style="color:red">Search Product: </p:outputLabel>
+					<p:inputText value="#{searchBean.searchKey}"></p:inputText>
+					<p:commandButton action="#{searchBean.searchProducts}"
+						update="dataTableGrid,resultsTable" value="Search"></p:commandButton>
+				</h:panelGrid>
+
+				<h:panelGrid id="dataTableGrid" styleClass="panelGridCenter">
+					<p:dataTable id="resultsTable" var="product" paginator="true"
+						value="#{searchBean.tableResults}" rows="10"
+						rendered="#{not empty searchBean.tableResults}">
+						<p:column headerText="Vendor" style="width:5%;">
+							<p:graphicImage value="#{resource['images/flipkart.png']}"
+								rendered="#{product.vendor eq 'flipkart'}" />
+							<p:graphicImage value="#{resource['images/amazon.png']}"
+								rendered="#{product.vendor eq 'amazon'}" />
+						</p:column>
+						<p:column headerText="Title">
+
+							<h:outputLink id="titleTip" value="#">
+								<h:outputText value="#{product.title}" size="30"
+									style="font-weight: bold;" />
+							</h:outputLink>
+							<p:tooltip id="toolTipGrow" for="titleTip"
+								value="#{product.toolTip}" showEffect="clip"
+								hideEffect="explode" />
+
+
+						</p:column>
+						<p:column headerText="Price">
+							<h:outputText value="#{product.price}" size="30"
+								style="font-weight: bold;" />
+						</p:column>
+						<p:column headerText="Redirect">
+							<h:outputText value="#{product.redirectURL}" size="30"
+								style="font-weight: bold;" escape="false" />
+						</p:column>
+					</p:dataTable>
+				</h:panelGrid>
+			</h:form>
+		</body>
+	</ui:define>
+</ui:composition>
+

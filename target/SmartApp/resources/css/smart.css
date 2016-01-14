@@ -1,0 +1,591 @@
+body {
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #333; 
+	background-color:#fff;
+	padding: 0;
+	margin: 0;
+}
+
+.output_Text {
+	color: blue;
+}
+
+html {
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #333;
+}
+
+a {
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #333;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #3440b4;
+}
+
+.outer_wrapper {
+	width: 100%
+}
+
+img {
+	border: 0;
+	padding: 0;
+}
+
+div {
+	font: Arial, Helvetica, sans-serif;
+	color: #333;
+}
+
+table {
+	font: Arial, Helvetica, sans-serif;
+	color: #333;
+}
+
+.valign_top {
+	vertical-align: top;
+}
+
+.valign_middle {
+	vertical-align: middle;
+}
+
+.valign_bottom {
+	vertical-align: bottom;
+}
+
+.LogOut {
+	background: #2e64a4 url(../images/bg_logout.jpg) repeat-x left 1px;
+	height: 500px;
+}
+
+/* ---------------Input------------------*/
+input,textarea {
+	font: normal 12px Arial, Helvetica, sans-serif;
+	color: #333;
+	border-top: 1px solid #515151;
+	border-left: 1px solid #515151;
+	border-right: 1px solid #cccaca;
+	border-bottom: 1px solid #cccaca;
+	background-color: #fafafa;
+	margin: 1px 1px 1px 0;
+}
+
+select {
+	font: normal 12px/normal Arial, Helvetica, sans-serif;
+	color: #333;
+}
+
+input.textfield {
+	height: 30px;
+	width: 120px;
+}
+
+input.disabled {
+	background-color: #f0f7ff;
+}
+
+form {
+	padding: 0;
+	margin: 0;
+}
+
+.radio_button {
+	border: 0;
+	height: 20px;
+	padding: 0;
+	margin: 0;
+}
+
+.button {
+	font-size: 11px;
+	border: 0;
+	font-weight: bold;
+	color: black;
+	width: 62px;
+	height: 22px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.button_large {
+	font-size: 11px;
+	border: 0;
+	font-weight: bold;
+	color: #edecf7;
+	width: 120px;
+	height: 22px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.button:hover {
+	color: #fff;
+}
+
+.largeButton {
+	font-size: 11px;
+	background: url(../images/large_bg_button.gif) no-repeat left top;
+	border: 0;
+	font-weight: bold;
+	color: #edecf7;
+	width: 185px;
+	height: 22px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.longButton {
+	font-size: 11px;
+	background: url(../images/long_bg_button.gif) no-repeat left top;
+	border: 0;
+	font-weight: bold;
+	color: #edecf7;
+	width: 124px;
+	height: 22px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.shortButton {
+	font-size: 11px;
+	background: url(../images/short_bg_button.gif) no-repeat left top;
+	border: 0;
+	font-weight: bold;
+	color: #edecf7;
+	width: 25px;
+	height: 22px;
+	cursor: pointer;
+	text-align: center;
+}
+
+/* ---------------Header------------------*/
+.header {
+	background: #24508c url(../images/bg_header.jpg) repeat-x left top;
+	height: 84px;
+	width: 100%;
+	padding: 0px;
+	text-align: left;
+}
+
+.logo {
+	height: 35px;
+	margin-right: 10px;
+	float: left;
+}
+
+.logo_title {
+	height: 30px;
+	float: left;
+}
+
+.logout_label {
+	color: #c6cfdd;
+	font-weight: bold;
+	text-align: right;
+	vertical-align: top;
+}
+
+/* ---------------Top Navigation------------------*/
+.rich-tab-header {
+	height: 30px;
+	background: #2d2e42 url(../images/bg_menu.jpg) repeat-x;
+	color: #fff;
+	padding: 0;
+	border: 0px;
+}
+
+.dr-label-text-decor {
+	font: bold 11px arial;
+	color: #dedee1;
+}
+
+.dr-label-text-decor:hover {
+	font: bold 11px arial;
+}
+
+.dr-toolbar-int {
+	padding: 0 2px 0 2px;
+}
+
+.dr-menu-label-select {
+	background: #343534 url(../images/menu_over.jpg) repeat-x;
+	border: 1px solid #484849;
+	color: #333;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* ---------------Top Navigation Dropdown Menu------------------*/
+.rich-menu-list-border {
+	background-color: #f6f6fe;
+	border: 1px solid #727171;
+	margin-top: 1px;
+}
+
+.rich-menu-item-label {
+	font-size: 11px;
+}
+
+.rich-menu-list-bg {
+	background-color: #fff;
+	color: #333;
+	background-image: url(../images/rich_pnl_title.gif) repeat-x;
+}
+
+.rich-menu-item-hover {
+	background: #e8e8e8;
+	border: 1px solid #d3d4d9;
+	color: #333;
+}
+
+.rich-menu-group-hover {
+	background-color: #e8e8e8;
+	border: 1px solid #d3d4d9;
+}
+
+.rich-menu-list-bg {
+	background-image: url(../images/rich-menu-list-bg.jpg) repeat-y;
+}
+
+.rich-menu-list-bg {
+	background-image: none;
+	padding-right: -10px;
+}
+
+/* ---------------Rich Panel ------------------*/
+.dr-pnl-h {
+	background: #d5e1ed url(../images/rich_pnl_title.gif) repeat-x;
+	font-size: 18px;
+	color: #426694;
+	padding: 8px 8px 12px 8px;
+	font-weight: normal;
+	line-height: 16px;
+	border: 0;
+}
+
+.dr-pnl {
+	border: 1px solid #e5e5e7;
+	width: 100%;
+}
+
+.dr-pnl-b {
+	background-color: #f7fbfe;
+}
+
+.panel_box {
+	background-color: #fff;
+}
+
+.dr-pnl-h-label {
+	font-size: 18px;
+	color: #426694;
+	padding: 0 15px 0 5px;
+}
+
+.UserName {
+	font: bold 11px arial;
+	color: #174f90;
+	float: right;
+	text-align: right;
+	width: 100%;
+	padding-right: 280px;
+}
+
+.panelHead {
+	height: 4px;
+	text-align: left;
+}
+
+/* ---------------Rich Tab------------------*/
+#rich_tab_wrapper {
+	padding: 0px 20px 0px 20px;
+}
+
+.dr-tbpnl-tb {
+	padding: 0 14px 0 14px;
+	height: 22px;
+}
+
+.dr-tbpnl-cntnt {
+	background-color: #f7fbfe;
+}
+
+/* ----tab active-----*/
+.dr-tbpnl-tb-act {
+	background: #f4f9fe;
+	color: #436ea5;
+}
+
+.dr-tbpnl-tb-act_head {
+	font: bold 16px Arial;
+	color: #627dab;
+	line-height: 28px;
+	float: left;
+	margin-bottom: 15px;
+}
+
+/* ----tab default-----*/
+.dr-tbpnl-tb-inact {
+	background: #5955a9 url(../images/bg_tab.gif) repeat-x;
+}
+
+/* ----tab sub section-----*/
+.dr-table-subheadercell {
+	padding: 4px 8px 4px 8px;
+	font: bold 11px arial;
+	color: #718ebf;
+	border: 1px solid #b9ceec;
+}
+
+.dr-table-cell {
+	border: 1px solid #b9ceec;
+}
+
+.dr-table-subheader {
+	background-color: #e3eeff;
+}
+
+.dr-table {
+	border-top: #b9ceec;
+	border-left: #b9ceec;
+}
+
+a.tbpnl_link {
+	font: bold 11px arial;
+	color: #075ec8;
+	Text-decoration: underline;
+	line-height: 22px;
+}
+
+/* ---------------Table Td ------------------*/
+.colClaz1 {
+	padding-right: 30px;
+}
+
+.colVerticalTop {
+	vertical-align: top;
+}
+
+/* ---------------Error Message box------------------*/
+.dr-stglpnl-m rich-stglpnl-marker {
+	position: relative;
+	float: right;
+	z-intex: 100;
+}
+
+.dr-stglpnl-h {
+	font: bold 12px arial;
+	color: #325592;
+	padding-left: 4px;
+	background: #bfd2eb url(../images/bg_messagebox.gif) repeat-x;
+}
+
+.dr-stglpnl-b {
+	font: normal 12px arial;
+	color: #39388e;
+	padding: 4px;
+}
+
+.errClass {
+	color: #d80817;
+}
+
+.successClass {
+	color: #274e01;
+}
+
+.warningClass {
+	color: #f26303;
+	font-weight: bold;
+}
+
+.infoClass {
+	color: #0647da;
+}
+
+/* ---------------Log Out ------------------*/
+.LogOutTheam {
+	background: #2a38a9 url(../images/bg_logout.jpg) repeat-x left top;
+	height: 600px;
+}
+
+/* ---------------Breadcrumb------------------*/
+a.breadcrumb {
+	font: normal 10px Arial, Helvetica, sans-serif;
+	color: #333;
+	text-decoration: none;
+}
+
+a.breadcrumb:hover {
+	text-decoration: underline;
+}
+
+a.breadcrumb_active {
+	font: normal 10px Arial, Helvetica, sans-serif;
+	color: #0c4c7c;
+	text-decoration: none;
+}
+
+.floatRight {
+	color: blue;
+	float: right;
+}
+
+.alignRight {
+	text-align: right;
+}
+
+.alignTop {
+	vertical-align: top;
+}
+
+.labelFormat {
+	font: bold 12px arial;
+	color: #627dab;
+	float: left;
+}
+
+.floatButtons {
+	text-align: right;
+	display: scroll;
+	position: fixed;
+	bottom: 4px;
+	border: none;
+	background: none;
+	direction: rtl;
+}
+
+.floatFooter {
+	width: 100%;
+	display: scroll;
+	position: fixed;
+	bottom: 2px;
+}
+
+.dataTableWithScrollBasic {
+	width: 1185px;
+	height: 200px;
+	overflow: scroll;
+}
+
+.dataTableWithScrollAdv {
+	width: 1185px;
+	height: 300px;
+	overflow: scroll;
+}
+
+/***************Disabled Text box color********/
+.disabledComponent {
+	background-color: #CCCCCC;
+	color: #880000;
+}
+
+/*************************Page Header Styles********************************/
+.panelHeader {
+	width: 100%;
+}
+
+.panelHeaderClass {
+	width: 98%;
+	height: 10px;
+	text-align: left;
+	font: Bold 12px Arial, Helvetica, sans-serif;
+	margin-right: 100px;
+}
+
+.cmPanelHeaderClass {
+	width: 100%;
+	height: 10px;
+	text-align: left;
+	font: Bold 12px Arial, Helvetica, sans-serif;
+	margin-right: 0px;
+}
+
+/******************************selectBooleanCheckbox******************************************/
+.chkBox {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+/* --------------  PageHeader, BreadCrumb & UserName styles -------------------*/
+.pageHeaderText {
+	font: bold 12px arial;
+	color: #627dab;
+	float: left;
+	text-align: left
+}
+
+.breadCrumbText {
+	font: bold 10px arial;
+	color: gray;
+	float: left;
+	text-align: left
+}
+
+.displayUserText {
+	font: 11px arial;
+	color: #0000FF;
+	float: right;
+	text-align: right;
+}
+
+.displayinputText {
+	font: 11px arial;
+	float: right;
+	text-align: left;
+	width: 140px;
+}
+
+.publishUserText {
+	font: 11px arial;
+	color: #0000FF;
+	float: right;
+	text-align: right;
+}
+
+.zeroBorder {
+	border: 0;
+	padding: 0;
+	margin: 0
+}
+
+.gray {
+	background-color: gray;
+}
+
+.smartColor {
+	background-color: #DCDCDC;
+}
+
+.yellow {
+	background-color: #FFFFCC;
+}
+
+.white {
+	background-color: white;
+}
+
+.cyan {
+	background-color: #99CCFF;
+}
+
+.error {
+	color: red;
+	font-weight: bold;
+}
+
+.info {
+	color: green;
+	font-weight: bold;
+}
+
+.errorClass {
+	color: red;
+}
+
+
+

@@ -1,0 +1,806 @@
+body {
+margin:0; 
+padding:0; 
+background-image: url(images_GPS/login_bg.jpg); 
+background-position:top; 
+background-repeat:repeat-x ;
+background-color:#ffffff;
+}
+
+.headersection { width:100%; height:66px; vertical-align:top; background-color:#ebebeb;}
+
+
+.logo { background-image: url(images_GPS/logo.jpg); background-repeat:no-repeat; background-position:left; width:195px; }
+
+.ui-widget,.ui-widget .ui-widget {
+	font-size: 90% !important;
+
+}
+
+.ui-datatable .ui-button {
+	float: left;
+	
+}
+
+.admin-dashboard-button {
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+}
+
+.userDataTableStyle {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 0;
+}
+
+.loginPanelStyle {
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	margin-top: 15%;
+}
+
+.userFormStyle {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100% !important;
+}
+
+.ui-selectmanymenu {
+	width: 100% !important;
+	overflow: hidden !important;
+}
+
+.ui-layout,.ui-layout-doc,.ui-layout-unit,.ui-layout-unit-content,.ui-layout-resizer,.ui-layout-wrap,.ui-layout-bd,.ui-layout-hd
+	{
+	border: none;
+	background-color: #ebebeb;	
+}
+
+.ui-widget-header {
+	border-width: 0;
+	padding: 1em 1.4em;
+	background-color: #39495A;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+
+text-decoration: none;
+color:#ffffff;
+text-shadow: none;
+}
+
+.ui-tabs-left > .ui-tabs-panels {
+float: right;
+width: 83%!important;
+}
+.ui-tabs-nav {
+	border: none;
+	background-color: #000000 ;
+	margin:0 auto!important;
+}
+.ui-tabs.ui-tabs-left > .ui-tabs-nav li, .ui-tabs.ui-tabs-right > .ui-tabs-nav li {
+display: block;
+float: left!important;
+white-space: normal;
+width: 99%;
+}
+.ui-tabs-left > .ui-tabs-nav {
+top:7px!important;
+margin-left: 0px!important;
+float: left !important;
+width: 17%!important;
+padding: 12px 0px 0px;
+height: 300px;
+background: none!important;
+padding-top: 6px;
+background-color:#c4c4c4!important;
+
+}
+.ui-tabs.ui-tabs-left > .ui-tabs-nav li {
+margin: 0 0 1px 0.2em;
+border-right: 0 none;
+background-color: #2b91ff!important;
+background-image:url(images_GPS/highlight_strip2.jpg)!important;
+background-repeat:repeat-x;
+}
+
+
+.ui-tabs.ui-tabs-top .ui-tabs-nav li.ui-tabs-selected {
+border-bottom: 0;
+color: #F80505;
+font-size: 12px;
+text-shadow: none!important;
+background-color: #2b91ff!important;
+background-image:url(images_GPS/highlight_strip.jpg)!important;
+background-repeat:repeat-x;
+
+}
+
+
+
+.selectOneMenu {
+	cursor: text;
+	background-color: #8C869C;
+}
+
+.ui-loginbutton{
+width: 87px !important;
+height:30px !important;
+margin-right:0px !important;
+background-image:url(images_GPS/login_but_normal.png);
+background-repeat:no-repeat; 
+display:block;
+color: #ffffff;
+text-align:center;
+text-decoration:none;
+line-height:31px;
+}
+.ui-loginbutton:hover{
+width: 87px !important;
+height:30px !important;
+margin-right: 0px !important;
+background-image:url(images_GPS/login_but_highlight.png);
+background-repeat:no-repeat; 
+display:block;
+color: #ffffff;
+text-align:center;
+text-decoration:none;
+line-height:31px;
+}
+.ui-search{
+width: 62px !important;
+height:31px !important;
+color: #ffffff !important;
+font-size: 12px !important;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+padding-left:24px;
+background-image:url(images/search_nrml.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+text-decoration:none;
+line-height:30px;
+}
+.ui-search:hover{
+width: 62px !important;
+height:31px !important;
+color: #ffffff !important;
+font-size: 13px !important;
+padding-left:24px;
+background-image:url(images_GPS/search_hlt.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+text-decoration:none;
+line-height:30px;
+}
+
+.ui-adduser{
+width: 62px !important;
+height:31px !important;
+color: #ffffff !important;
+font-size: 12px !important;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+padding-left:27px;
+background-image:url(images_GPS/adduser_nrml.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+text-decoration:none;
+line-height:30px;
+}
+.ui-adduser:hover{
+width: 62px !important;
+height:31px !important;
+color: #ffffff !important;
+font-size: 12px !important;
+padding-left:27px;
+background-image:url(images_GPS/adduser_hlt.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+text-decoration:none;
+line-height:30px;
+}
+
+
+.ui-excelrep{
+width: 72px !important;
+height:26px !important;
+color: #ffffff !important;
+font-size: 11px !important;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+padding-left:25px;
+background-image:url(images_GPS/excel_nrml.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+text-decoration:none;
+line-height:27px;
+float:right!important;
+}
+.ui-excelrep:hover{
+width: 72px !important;
+height:26px !important;
+color: #ffffff !important;
+font-size: 11px !important;
+padding-left:25px;
+background-image:url(images_GPS/excel_hlt.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+text-decoration:none;
+line-height:27px;
+float:right!important;
+
+}
+
+
+
+
+.ui-register{
+width: 86px !important;
+height:31px !important;
+color: #ffffff !important;
+font-size: 12px !important;
+font-weight: bold;
+text-align:center;
+font-family: Arial, Helvetica, sans-serif;
+padding-left:0px;
+background-image:url(images_GPS/register_nrml.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+text-decoration:none;
+line-height:30px;
+}
+.ui-register:hover{
+width: 86px !important;
+height:31px !important;
+color: #ffffff !important;
+font-size: 12px !important;
+text-align:center;
+background-image:url(images_GPS/register_hlt.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+text-decoration:none;
+line-height:30px;
+}
+
+
+.ui-default1{
+width: 136px !important;
+height:31px !important;
+color: #ffffff !important;
+font-size: 12px !important;
+font-weight: bold;
+text-align:center;
+font-family: Arial, Helvetica, sans-serif;
+background-image:url(images_GPS/default_nrml.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+text-decoration:none;
+line-height:30px;
+}
+.ui-default1:hover{
+width: 136px !important;
+height:31px !important;
+color: #ffffff !important;
+font-size: 12px !important;
+text-align:center;
+background-image:url(images_GPS/default_hlt.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+text-decoration:none;
+line-height:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ui-save{
+width: 86px !important;
+height:31px !important;
+color: #ffffff !important;
+font-size: 12px !important;
+font-weight: bold;
+text-align:center;
+font-family: Arial, Helvetica, sans-serif;
+padding-left:0px;
+background-image:url(images_GPS/save_nrml.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+text-decoration:none;
+line-height:30px;
+}
+.ui-save:hover{
+width: 86px !important;
+height:31px !important;
+color: #ffffff !important;
+font-size: 12px !important;
+text-align:center;
+background-image:url(images_GPS/save_hlt.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+text-decoration:none;
+line-height:30px;
+}
+
+.ui-cancel{
+width: 86px !important;
+height:31px !important;
+color: #ffffff !important;
+font-size: 12px !important;
+font-weight: bold;
+text-align:center;
+font-family: Arial, Helvetica, sans-serif;
+padding-left:0px;
+background-image:url(images_GPS/cancel_nrml.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+text-decoration:none;
+line-height:30px;
+}
+.ui-cancel:hover{
+width: 86px !important;
+height:31px !important;
+color: #ffffff !important;
+font-size: 12px !important;
+text-align:center;
+background-image:url(images_GPS/cancel_hlt.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+text-decoration:none;
+line-height:30px;
+}
+
+.ui-reset{
+width: 86px !important;
+height:31px !important;
+color: #ffffff !important;
+font-size: 12px !important;
+font-weight: bold;
+text-align:center;
+font-family: Arial, Helvetica, sans-serif;
+padding-left:0px;
+background-image:url(images_GPS/register_nrml.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+text-decoration:none;
+line-height:30px;
+}
+.ui-reset:hover{
+width: 86px !important;
+height:31px !important;
+color: #ffffff !important;
+font-size: 12px !important;
+text-align:center;
+background-image:url(images_GPS/register_hlt.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+text-decoration:none;
+line-height:30px;
+}
+
+.ui-cal{
+width: 25px !important;
+height:23px !important;
+background-image:url(images_GPS/datepicker_nrml.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+}
+.ui-cal:hover{
+width: 25px !important;
+height:23px !important;
+background-image:url(images_GPS/datepicker_hlt.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+}
+
+
+.footercontent {
+background-image:url(images_GPS/footerimg.png);
+background-repeat:repeat-x ; 
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.ui-datatable .ui-paginator, .ui-datatable .ui-paginator {
+padding: 2px;
+margin-top:-32px!important;
+margin-right:140px!important;
+}
+
+.ui-paginator {
+margin: 0px 10px 10px 0px !important;
+float:right!important;
+padding: 2px;
+background:none!important;
+}
+
+
+.ui-corner-top {
+-moz-border-radius-topleft: 3px;
+-webkit-border-top-left-radius: 3px;
+border-top-left-radius: 3px;
+-moz-border-radius-topright: 3px;
+-webkit-border-top-right-radius: 3px;
+border-top-right-radius: 3px;
+background: rgb(236, 236, 236)!important;
+text-shadow: none!important;
+}
+
+.ui-panel {
+padding:0px!important;
+}
+
+.ui-selectonemenu .ui-selectonemenu-label {
+display: block;
+border: none;
+white-space: nowrap;
+overflow: hidden;
+font-weight: normal;
+width: 100%!important;
+float: left;
+
+}
+.ui-selectonemenu-panel .ui-selectonemenu-list {
+padding: 0.4em;
+border: 0 none;
+background: rgb(248, 248, 248)!important;
+}
+
+.ui-selectonemenu-panel .ui-selectonemenu-item {
+font-weight: normal;
+text-shadow: none;
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+border: 1px solid #666666;
+background: #2a91fd;
+color: #ffffff;
+text-shadow:none;
+}
+
+
+.ui-button {
+cursor: pointer;
+text-align: center;
+zoom: 1;
+margin-top:0px!important;
+}
+
+.fileupload-content {
+padding: 0px;
+border: 0;
+height:0px!important;
+}
+
+
+
+
+.ui-logintext {
+	border-width: 0;
+	padding: 1em 1.4em;
+	background-color: #ffffff!important;	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:13px !important;
+	color: #4c4c4c;
+}
+
+
+.icon2 a {
+	width: 55px;
+	height: 38px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #656363;
+	background-image: url(images/icon_logout.png);
+	background-repeat: no-repeat;
+	display: block;
+	padding: 0px 0px 0px 45px;
+	line-height: 35px;
+	text-decoration: none
+}
+
+.icon2 {
+	background-image: url(images/icon_logout_high.png);
+	background-position: left top;
+	color: #127ae6;
+	background-repeat: no-repeat
+}
+.icon2:hover a {
+	background-image: url(images/icon_logout_high.png);
+	background-position: left top;
+	color: #127ae6;
+	background-repeat: no-repeat
+}
+
+.tabssectionbackground {
+	width: 100%;
+	height: 59px;
+	vertical-align: top;
+	background-image: url(images/tabs_background.jpg);
+	background-repeat: repeat-x;
+}
+
+.tableborder_box {
+	border: 2px #c4c4c4 solid;
+	margin-top: 20px
+}
+
+.tableheader_box {
+	height: 38px;
+	background-color: #c4c4c4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #001828;
+	vertical-align: middle;
+	line-height: 30px;
+	padding-left: 10px
+}
+
+.tableborder_thread {
+	margin-top: 20px
+}
+
+.table_threadheading {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #727272;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 40px;
+	padding-left: 5px
+}
+
+
+.table_threadbodybackground {
+	border-top-style: solid;
+	border-top-color: #878b8e;
+	border-top-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #878b8e;
+	border-bottom-width: 1px;
+	height: 200px;
+}
+
+.footer {
+	background-color: #000e17;
+	height: 19px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	padding-right: 20px;
+}
+
+.loginbg { background:url(../images_GPS/login_bg.jpg); width:1024px; height:768px; background-position:top; background-repeat:repeat-x; }
+.loginpanel { background:url(images_GPS/login-panel.png); width:749px; height:331px; background-position:top; background-repeat:no-repeat; margin-top:156px}
+.login_title { font-family:Arial, Helvetica, sans-serif; font-size:32px; color:#FFFFFF;padding-left:258px; text-shadow: 0 2px 0 rgba(4, 16, 118, 0.8);
+}
+.login_namepass { font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#FFFFFF; width:75px}
+.login_copyright{ font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#ffffff;padding-top:49px;padding-left:10px}
+.login_fields {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #9aafc3;
+	border: solid 1px #4492e2;
+	width: 291px;
+	height: 30px;
+	background-color: #ffffff;
+}
+
+
+.ui-helper-reset {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+height:59px;
+text-decoration: none;
+font-size: 100%;
+list-style: none;
+background-image:url(images_GPS/tabs_background.jpg)!important;
+background-repeat:repeat-x;
+vertical-Align:center !important;
+}
+
+
+
+
+
+.ui-tabs .ui-tabs-panel {
+border-width: 0;
+padding: 2em 1.4em;
+background: none;
+}
+
+.ui-widget-content {
+
+background: #ebebeb;
+color: #4c4c4c;
+font-size: 12px;
+
+}
+element.style {
+
+}
+Matched CSS Rules
+.ui-panel .ui-panel-titlebar {
+padding: 1.5em 1em 0.3em;
+}
+.ui-helper-clearfix {
+display: block;
+}
+.ui-helper-clearfix {
+display: inline-block;
+}
+.ui-widget-header {
+border-width: 0;
+padding: 5em 1.4em;
+background: #c4c4c4;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+color: #001828;
+}
+.ui-corner-all {
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+}
+
+.ui-panel .ui-panel-content {
+border: 2 ! important;
+background: none;
+padding: 0.5em 1em;
+}
+.ui-panel .ui-panel-title {
+padding-left:5px;
+color: #001828;
+text-shadow: none;
+font-family: Arial, Helvetica, sans-serif;
+font-size:14px !important;
+
+}
+
+
+.ui-inputfield, .ui-widget-content .ui-inputfield, .ui-widget-header .ui-inputfield {
+background: #ffffff;
+-moz-box-shadow: inset 0 2px 2px #8f8f8f;
+-webkit-box-shadow: inset 0 2px 2px #8f8f8f;
+box-shadow: inset 0 2px 2px #E6E6E6;
+color: #4c4c4c;
+font-size:12px !important;
+}
+
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+font-weight: bold;
+color: #4c4c4c;
+text-shadow: none;
+font-size: 12px;
+}
+
+.ui-datatable tbody td {
+border-color: inherit;
+padding:2px!important;
+}
+.ui-datatable thead th, .ui-datatable tbody td, .ui-datatable tfoot td {
+padding: 4px 10px;
+overflow: hidden;
+white-space: nowrap;
+border-width: 1px;
+border-style: solid;
+border-color:#dddddd!important;
+font-size:12px!important;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.tabBackGround{
+background-image:url(images_GPS/login_bg.jpg);	
+	
+}
+table.jqplot-table-legend, table.jqplot-cursor-legend {
+font-size: 12px!important;
+font-family:Arial, Helvetica, sans-serif;
+margin-top:-100px!important;
+background-color:#FFFFFF!important;
+}
+
+.ui-go{
+width: 27px !important;
+height:27px !important;
+color: #ffffff !important;
+font-size: 12px !important;
+font-weight: bold;
+text-align:center;
+font-family: Arial, Helvetica, sans-serif;
+padding-left:0px;
+background-image:url(images_GPS/go_nrml.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+text-decoration:none;
+line-height:30px;
+}
+.ui-go:hover{
+width: 27px !important;
+height:27px !important;
+color: #ffffff !important;
+font-size: 12px !important;
+text-align:center;
+background-image:url(images_GPS/go_hlt.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+text-decoration:none;
+line-height:30px;
+}
+
+.ui-bn{
+width: 57px !important;
+height:27px !important;
+color: #ffffff !important;
+font-size: 12px !important;
+font-weight: bold;
+text-align:center;
+font-family: Arial, Helvetica, sans-serif;
+padding-left:0px;
+background-image:url(images_GPS/bn_nrml.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+text-decoration:none;
+line-height:30px;
+}
+.ui-bn:hover{
+width: 57px !important;
+height:27px !important;
+color: #ffffff !important;
+font-size: 12px !important;
+text-align:center;
+background-image:url(images_GPS/bn_hlt.png);
+background-repeat:no-repeat; 
+display:block;
+position:relative;
+text-decoration:none;
+line-height:30px;
+}
+table.jqplot-table-legend, table.jqplot-cursor-legend {
+    background-color: rgba(255,255,255,0.01) !important;
+    border: none !important  ;
+    position: absolute;
+  font-size: 10px !important;
+  }
+
+
